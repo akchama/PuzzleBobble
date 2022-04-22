@@ -29,7 +29,7 @@ void GameManager::shoot_bobble(Cannon& cannon, sf::Vector2f aim_dir_norm, Bobble
 }
 
 
-void GameManager::burst_matching_bubbles(Bobble& bobble, Bobble& target)
+void GameManager::burst_matching_bubbles(Bobble& bobble, bobble& target)
 {
 	sf::Vector2f dump_pos(-100.f, -100.f);
 	auto distance = sqrt(pow(target.shape.getPosition().x - bobble.shape.getPosition().x, 2)
@@ -102,7 +102,7 @@ void GameManager::run()
 	Bobble b1(bobbles);
 	sf::Color next_color = b1.get_random_color();
 
-	Grid grid;
+	Grid Grid;
 	Bobble next_color_bobble(bobbles);
 	next_color_bobble.shape.setFillColor(next_color);
 	next_color_bobble.shape.setPosition(50, 575);

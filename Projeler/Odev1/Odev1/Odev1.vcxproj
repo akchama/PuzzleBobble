@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
     <ItemGroup>
+        <ClCompile Include="Animation.cpp"/>
         <ClCompile Include="Bobble.cpp"/>
         <ClCompile Include="Cannon.cpp"/>
         <ClCompile Include="GameManager.cpp"/>
@@ -161,6 +162,7 @@
         <ClCompile Include="Utils.cpp"/>
     </ItemGroup>
     <ItemGroup>
+        <ClInclude Include="Animation.h"/>
         <ClInclude Include="Bobble.h"/>
         <ClInclude Include="Cannon.h"/>
         <ClInclude Include="GameManager.h"/>
